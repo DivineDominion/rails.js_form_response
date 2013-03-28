@@ -1,0 +1,21 @@
+<%= render :partial => 'shared/flash', :locals => { :flash => flash } %>
+
+<div id="comments">
+<%- @comments.each do |comment| -%>
+    <p><%= comment.body %></p>
+<%- end unless @comments.nil? -%>
+</div>
+
+<%= form_for :comment, :remote => true, :html => { :id => 'new-comment-form' } do |f| %>
+  <%= f.text_area(:body) %>
+  <div class="errors">
+  <%- if @comment.errors.any? -%>
+      <ul>
+          <% @comment.errors.full_messages.each do |error| %>
+            <li><%=h error %></li>
+          <% end %>
+      </ul>
+  <%- end unless @comment.nil? -%>
+  </div>
+  <%= f.submit %>
+<% end %>
