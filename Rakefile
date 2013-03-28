@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Ajax::Application.load_tasks
+RailsJsFormResponse::Application.load_tasks
