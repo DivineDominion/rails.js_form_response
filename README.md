@@ -3,7 +3,7 @@ Fixing JangoSteve's rails.js form callback example
  
 I struggled with Ruby on Rails Unobstrusive JavaScript (UJS) handling form responses.  When form validation failed, the JavaScript in the response body simply wasn't executed.  Ever.
 
-Steve Schwartz aka JangoSteve clearly instructed us how Rails' UJS driver behaves.  Only not even his example doesn't work out of the box.
+Steve Schwartz aka JangoSteve clearly instructed us how Rails' UJS driver behaves ([part 1][2], [part 2][1]).  Only not even his example doesn't work out of the box.
 
 Think of this as a working example made from his code samples.
 
@@ -50,5 +50,25 @@ Not-so-Quickfix:  `eval` XHR's response on `ajax:error` callbacks.
 
 Works.
 
-  [1]: http://www.alfajango.com/blog/rails-3-remote-links-and-forms-data-type-with-jquery/comment-page-1/#comment-4611
+  [1]: http://www.alfajango.com/blog/rails-3-remote-links-and-forms-data-type-with-jquery
   [2]: http://www.alfajango.com/blog/rails-3-remote-links-and-forms/
+
+Reference
+=========
+
+*   Author's website: <http://christiantietze.de/>
+*   Author's twitter: [@divinedominion](http://twitter.com/divinedominion)
+*   Steve Schwartz' excellent blog: <http://www.alfajango.com/blog/>
+
+Tested for and crafted using Ruby 2.0.0, Rails 3.2.13.
+
+License
+=======
+
+(The MIT License)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
