@@ -15,7 +15,7 @@
 //= require_tree .
 
 $(document).ready(function() {
-  $('form[data-remote="true"]').bind('ajax:error', function(evt, xhr, status){
+  $(document).on('ajax:error', 'form[data-remote="true"]', function(evt, xhr, status) {
     eval(xhr.responseText);
   });
 });
